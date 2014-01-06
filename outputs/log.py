@@ -12,7 +12,7 @@ class Log(output.Output):
 		logline += str(datetime.datetime.now())
 		logline += '",'
 		for i in dataPoints:
-			logline += '"' + i["name"] + '"' + ":" + '"' + str(i["value"]) + '",'
+			logline += '"' + i["name"] + '"' + ":" + '"' + str(i["value"]) + '"'
 		
 		logline += "}\n"
 		
